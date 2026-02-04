@@ -1,0 +1,525 @@
+/* Global Styles */
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 40px;
+  color: #2d3436;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+h1 {
+  color: #2d3436;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #636e72;
+}
+
+span {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Card Base Styles */
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Softer, deeper shadow */
+  margin-top: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* 0. Components Intro - Gold Theme */
+.component-intro {
+  border-left: 5px solid #f1c40f;
+  background: linear-gradient(to right bottom, #ffffff, #fffdf0);
+}
+.component-intro h1 {
+  color: #f39c12;
+  text-align: left;
+}
+.component-intro h2 {
+  color: #e67e22;
+  border-bottom-color: rgba(241, 196, 15, 0.2);
+}
+.component-intro span {
+  color: #f39c12;
+}
+
+/* 1. Intro - Blue Theme */
+.container-intro {
+  border-left: 5px solid #3498db;
+  background: linear-gradient(to right bottom, #ffffff, #f0f8ff);
+}
+.container-intro h1 {
+  color: #2980b9;
+  text-align: left;
+}
+.container-intro span {
+  color: #3498db;
+}
+
+/* 2. JSX - Purple/Indigo Theme */
+.container-jsx {
+  border-left: 5px solid #8e44ad;
+  background: linear-gradient(to right bottom, #ffffff, #fbf4ff);
+}
+.container-jsx h2 {
+  color: #8e44ad;
+  border-bottom-color: rgba(142, 68, 173, 0.2);
+}
+.container-jsx span {
+  color: #9b59b6;
+}
+
+/* 3. Props - Green/Teal Theme */
+.container-props {
+  border-left: 5px solid #27ae60;
+  background: linear-gradient(to right bottom, #ffffff, #f0fff4);
+}
+.container-props h2 {
+  color: #27ae60;
+  border-bottom-color: rgba(39, 174, 96, 0.2);
+}
+.container-props span {
+  color: #2ecc71;
+}
+
+/* 4. State - Orange Theme */
+.container-state {
+  border-left: 5px solid #e67e22;
+  background: linear-gradient(to right bottom, #ffffff, #fff8f0);
+}
+.container-state h2 {
+  color: #d35400;
+  border-bottom-color: rgba(230, 126, 34, 0.2);
+}
+.container-state span {
+  color: #e67e22;
+}
+
+/* 5. Events - Red/Pink Theme */
+.container-events {
+  border-left: 5px solid #e74c3c;
+  background: linear-gradient(to right bottom, #ffffff, #fff0f0);
+}
+.container-events h2 {
+  color: #c0392b;
+  border-bottom-color: rgba(231, 76, 60, 0.2);
+}
+.container-events span {
+  color: #e74c3c;
+}
+
+/* Practice Area / Code Styles */
+.practice-area {
+  background-color: #282c34;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-family: "Fira Code", "Consolas", monospace;
+  border: 1px solid #3e4451;
+}
+
+.practice-area h3 {
+  color: #abb2bf;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #3e4451;
+  padding-bottom: 5px;
+}
+
+.practice-area h1 {
+  color: #e06c75; /* Reddish */
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.practice-area p {
+  color: #98c379; /* Greenish */
+  margin-bottom: 5px;
+}
+
+.practice-area div {
+  margin-top: 10px;
+}
+
+/* PROPS EXAMPLE STYLES */
+.card-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.user-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Pop out from dark bg */
+}
+
+.user-card h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.user-card p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  font-family: sans-serif; /* Not monospace */
+}
+
+.role-tag {
+  background-color: #3498db;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-top: 0;
+}
+
+/* STATE EXAMPLE STYLES */
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: #282c34;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: #e06c75;
+  color: white;
+}
+
+.input-field {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   INTRODUCTION SECTION STYLES (iOS Premium)
+   ========================================= */
+
+/* Animated Mesh Gradient Background */
+@keyframes meshGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.introduction-section {
+  position: relative;
+  background:
+    radial-gradient(at top left, #3a1c71, transparent),
+    radial-gradient(at bottom right, #b2a02b, transparent),
+    linear-gradient(135deg, #23102c, #622b63, #393e24);
+  background-size: 200% 200%;
+  animation: meshGradient 15s ease infinite;
+  color: white;
+  padding: 60px;
+  border-radius: 32px; /* iOS rounded value */
+  margin-bottom: 60px;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto,
+    sans-serif;
+  overflow: hidden;
+  isolation: isolate; /* Create stacking context */
+}
+
+/* Floating Orbs for Glass Effect */
+.introduction-section::before,
+.introduction-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px); /* Heavy iOS blur */
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.introduction-section::before {
+  background: #ff00cc; /* Pinkish orb */
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  left: -100px;
+  animation: floatOrb 10s infinite alternate;
+}
+
+.introduction-section::after {
+  background: #333399; /* Deep blue orb */
+  width: 500px;
+  height: 500px;
+  bottom: -150px;
+  right: -100px;
+  animation: floatOrb 12s infinite alternate-reverse;
+}
+
+@keyframes floatOrb {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(30px, 50px);
+  }
+}
+
+.intro-header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.intro-header h1 {
+  color: #ffffff;
+  font-size: 4rem; /* Big, bold title */
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #fff, #b3e5fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.main-description {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+}
+
+.nepali-text {
+  display: block;
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05); /* Subtler nepali box */
+  border-radius: 12px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* CARDS COMMON STYLES (iOS Widget Style) */
+.feature-card,
+.type-card {
+  background: rgba(255, 255, 255, 0.07); /* Ultra transparent */
+  backdrop-filter: blur(25px); /* Strong blur */
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 25px;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover,
+.type-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* FEATURES GRID & CARDS */
+.features-wrapper {
+  margin-bottom: 60px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.feature-card h3 {
+  color: #61dafb;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.feature-card p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.05rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* TYPES GRID */
+.types-wrapper {
+  margin-bottom: 60px;
+}
+
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Reset specific type styles from previous iteration to unify look */
+.type-card {
+  color: white; /* Override default text color */
+}
+
+.type-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.type-card p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Gradient borders or accents for types */
+.class-type {
+  box-shadow: inset 0 -4px 0 0 rgba(231, 76, 60, 0.5);
+}
+.func-type {
+  box-shadow: inset 0 -4px 0 0 rgba(46, 204, 113, 0.5);
+}
+.state-type {
+  box-shadow: inset 0 -4px 0 0 rgba(241, 196, 15, 0.5);
+}
+.stateless-type {
+  box-shadow: inset 0 -4px 0 0 rgba(149, 165, 166, 0.5);
+}
+
+/* CONCEPTS LIST - Pill Design */
+.concepts-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center; /* Center the pills */
+}
+
+.concepts-list li {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 12px 24px;
+  border-radius: 100px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.concepts-list li:hover {
+  background: white;
+  color: #302b63; /* Dark text on white */
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.concepts-list strong {
+  margin-right: 5px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .introduction-section {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+  .intro-header h1 {
+    font-size: 2.5rem;
+  }
+  .features-grid,
+  .types-grid {
+    grid-template-columns: 1fr; /* Stack on mobile */
+  }
+}
